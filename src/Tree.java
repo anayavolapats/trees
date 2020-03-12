@@ -1,4 +1,5 @@
 public class Tree {
+
     class Node{
         Node r, l;
         int data;
@@ -7,12 +8,13 @@ public class Tree {
         }
     }
     Node root;
-
+    int num = 1;
     Tree(int v){
         root = new Node(v);
     }
 
     public void add(int value){
+        num = num + 1;
         Node cur =  root;
         boolean found = true;
         while(!found){
@@ -41,4 +43,14 @@ public class Tree {
             }
         }
     }
+
+    public static void main(String[] args) {
+        Tree i = new Tree(21);
+        int c = 0;
+        for(int y = 0; y < c; y++){
+
+        }
+    }
 }
+// написать вывод всего
+// написать поиск элемента - тру/фолз
